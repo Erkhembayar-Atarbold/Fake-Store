@@ -5,9 +5,10 @@
 /* Box Model Hack */
 *{
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 5);
   }
-  
+  html {
+    height: 100%;
+  }
   /******************************************
   /* LAYOUT
   /*******************************************/
@@ -18,13 +19,15 @@
 
 
   body {
-    height: 100vh;
+    height: 100%;
 
     background-color: rgba(255, 255, 255, 0.808);
   }
 
-header {
+nav {
     display: flex;
+    min-width: 100%;
+    flex-direction: row;
 }
 
 
@@ -65,7 +68,68 @@ header {
     font-size: 50px;
 }
 
+main {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
 
+
+
+
+.featured-section {
+  display: flex;
+  min-width: 100%;
+  background-color: rgba(76,182,55,0.8);
+  min-height: 80vh;
+
+  
+}
+
+.featured-wrap {
+  display: flex;
+  min-width: 50%;
+  height: inherit;
+padding: 1rem;
+  justify-content: center;
+  align-items: center;
+
+
+
+  text-align: left;
+}
+
+
+
+.featured-text {
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 2.5rem;
+  
+}
+
+.text-wrap {
+  min-width: fit-content;
+  min-height: 30%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+.btn-wrap {
+  min-width: fit-content;
+}
+
+
+
+
+.home-img-container {
+  min-width: 50%;
+}
+
+
+.home-img-container > img {
+  min-width: 100%;
+}
   
   
   /******************************************
