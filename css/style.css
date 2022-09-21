@@ -117,6 +117,10 @@ padding: 1rem;
 
 .btn-wrap {
   min-width: fit-content;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
 }
 
 
